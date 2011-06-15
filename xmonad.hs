@@ -11,7 +11,8 @@ main = do
   xmonad $ defaultConfig 
     { modMask = mod4Mask,
       terminal = "sakura",
-      keys = \c -> myKeys c `M.union` keys defaultConfig c
+      keys = \c -> myKeys c `M.union` keys defaultConfig c,
+      layoutHook = smartBorders $ layoutHook defaultConfig
     } 
   where 
     myKeys (XConfig {modMask = modm}) = M.fromList $
