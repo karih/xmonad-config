@@ -1,12 +1,8 @@
 import qualified Data.Map as M
 
 import XMonad
---import XMonad.Config.Gnome
 import XMonad.Layout.NoBorders
---import XMonad.Hooks.SetWMName
 
-
---myWorkspaces = ["Drasl", "Spjall", "Vafr", "Local 1", "Local 2", "Remote 1", "Remote 2", "8", "9"]
 main = do 
   xmonad $ defaultConfig 
     { modMask = mod4Mask,
